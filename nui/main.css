@@ -1,0 +1,121 @@
+* {
+    color: white;
+    user-select: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255, 0, 0, 0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255, 0, 0, 0.4); 
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    height: 100%; /* Set the height of the body and html to 100% */
+    overflow: hidden; /* Hide the default scrollbars of the body and html */
+}
+
+body {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+#bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    transform: translate(-14px, -14px);
+    display: flex;
+    gap: 5px;
+    align-items: center; /* Center the elements vertically */
+    z-index: 1;
+}
+
+.eye {
+    font-size: 28px;
+    color: white;
+}
+
+.active {
+    color: red;      
+}
+
+#elements {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: calc(100% + 5px); /* Adjust the distance from the eye */
+    gap: 5px;
+    max-height: 15vh; /* Set a maximum height for the container */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    top: 50%;
+    transform: translateY(-50%); /* Center the elements vertically */
+}
+
+.item {
+    list-style: none;
+    font-size: 1.3vh;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+    user-select: none;
+    white-space: nowrap;
+    text-shadow: 0.2vh 0.2vh 0.2vh #000000;
+    display: flex; /* Make it a flex container */
+    align-items: center; /* Center the items vertically */
+}
+
+.icon {
+    font-size: 13px;
+    color: red;
+}
+
+.label {
+    color: white;
+    font-size: 14px;
+    text-indent: 2px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 550;
+}
+
+.label:hover {
+    color: red;
+    font-size: 14px;
+    text-indent: 2px;
+    cursor: pointer;
+}
