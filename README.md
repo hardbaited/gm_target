@@ -11,7 +11,7 @@ You can also post any missing features from other targetting resources that you 
 I tired to implement item checks but the issue was that the script had to be restarted for the option to show thus i removed the feature completly but the bridge still gets the value
 if anyone knows how to fix it please make a pull request
 
-## Perpuse of this script
+## Purpose of this script
 I Made the script to be rsg-core compatible with minimal edits if none at all. I do not take credit for writing this script nor do i claim ownership of it.
 
 ## Why Choose this instead of rsg-target
