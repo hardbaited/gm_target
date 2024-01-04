@@ -83,11 +83,7 @@ local typeChecks = {
 			return false
 		end
 
-		if (target.job == nil or target.job == PlayerData.job.name) then
-			return true
-		end
-
-		return false
+		return true
 	end,
 
 	['model'] = function(target,pos,ent,endPos,modelHash,isNetworked,netId,targetDist,entityType) 
@@ -103,11 +99,7 @@ local typeChecks = {
 			return false
 		end
 
-		if (target.job == nil or target.job == PlayerData.job.name) then
-			return true
-		end
-
-		return false
+		return true
 	end,
 
 	['localEnt'] = function(target,pos,ent,endPos,modelHash,isNetworked,netId,targetDist,entityType)
@@ -123,11 +115,7 @@ local typeChecks = {
 			return false
 		end
 
-		if (target.job == nil or target.job == PlayerData.job.name) then
-			return true
-		end
-
-		return false
+		return true
 	end,
 
 	['networkEnt'] = function(target,pos,ent,endPos,modelHash,isNetworked,netId,targetDist,entityType)
@@ -145,11 +133,7 @@ local typeChecks = {
 			return false
 		end
 
-		if (target.job == nil or target.job == PlayerData.job.name) then
-			return true
-		end
-
-		return false
+		return true
 	end,
 
 	['polyZone'] = function(target, pos, ent, endPos, modelHash, isNetworked, netId, targetDist, entityType)
@@ -185,11 +169,7 @@ local typeChecks = {
 			return false
 		end
 
-		if (target.job == nil or target.job == PlayerData.job.name) then
-			return true
-		end
-
-		return false
+		return true
 	end,
 
 	['netEntBone'] = function(target,pos,ent,endPos,modelHash,isNetworked,netId,targetDist,entityType)
@@ -209,11 +189,7 @@ local typeChecks = {
 			return false
 		end
 
-		if (target.job == nil or target.job == PlayerData.job.name) then
-			return true
-		end
-
-		return false
+		return true
 	end,
 
 	['modelBone'] = function(target,pos,ent,endPos,modelHash,isNetworked,netId,targetDist,entityType)
@@ -236,11 +212,7 @@ local typeChecks = {
 			return false
 		end
 
-		if (target.job == nil or target.job == PlayerData.job.name) then
-			return true
-		end
-
-		return false
+		return true
 	end,
 
 	['player'] = function(target,pos,ent,endPos,modelHash,isNetworked,netId,targetDist,entityType)
@@ -259,8 +231,6 @@ local typeChecks = {
 		if not IsPedAPlayer(ent) then
 			return false
 		end
-
-		
 
 		if entityType == 1 then
 			return true
